@@ -26,7 +26,7 @@ jobs:
 
       - name: 날씨 데이터 가져오기
         env: 
-          OPENWEATHER_MY_API_KEY: ${{ secrets.OPENWEATHER_MY_API_KEY }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_MY_API_KEY }}
         run: python seoul_weather_5m.py
 
       - name: 변경 사항 커밋 및 푸시
