@@ -15,7 +15,7 @@ data = response.json()
 temp = data["main"]["temp"]
 time = datetime.now().strftime("%Y-%m-%d %H:%M:%S") #현재 시각 찍기
 
-csv_filename = "Seoul_weather.csv"
+csv_filename = "seoul_weather.csv"
 header = ["time", "temp"]
 
 # "seoul_weather.csv"가 없다면 새로 생성
